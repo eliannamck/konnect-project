@@ -1,0 +1,24 @@
+html {
+    font-size: 100%; // let's user control zoom level in browser
+    box-sizing: border-box; // makes size of elements include padding in final width
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1 {
+	font-family: "Lucida Console", Monaco, monospace;
+	color: blue;
+}
+
+button {
+	color: green;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.3;
+}
