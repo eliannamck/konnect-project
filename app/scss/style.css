@@ -1,3 +1,5 @@
+/* border box styles below assure that the parent
+& child div inheritance is maintained and intuitive */
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -9,10 +11,11 @@ html {
           box-sizing: inherit;
 }
 
+/* header styles */
 .header {
   overflow: hidden;
   background-color: #ffffff;
-  padding: 20px 10px;
+  padding: 15px 20px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -25,13 +28,14 @@ html {
 
 .header a {
   float: left;
-  color: black;
+  color: #000000;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
+  margin-inline: 5px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 16px; 
   line-height: 25px;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
 .header a.logo {
@@ -45,8 +49,8 @@ html {
 }
 
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #9762ec;
+  color: #ffffff;
 }
 
 .header-right {
@@ -65,16 +69,79 @@ html {
   }
 }
 
+/* body styles */
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+/* button styles */
+.button {
+  background-color: #9762ec;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-clear {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #b894f2;
+  color: #9762ec;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* styles of six sections on site:
+ 1. intro
+ 2. features
+ 3. call
+ 4. chat
+ 5. meet
+ 6. download 
+ */
+
+.intro {
   padding: 64px;
 }
 
+.features {
+  padding: 64px;
+  background-color:#f1f1f1;
+}
 
+.call {
+  padding: 64px;
+}
+
+.chat {
+  padding: 64px;
+  background-color:#f1f1f1;
+}
+
+.meet {
+  padding: 64px;
+}
+
+.download {
+  padding: 64px;
+  background-color:#f1f1f1;
+  text-align: center;
+}
+
+/* section components' styles */
 .row:after {
   content: "";
   display: table;
@@ -94,22 +161,16 @@ body {
 }
 
 .large-font {
-  font-size: 48px;
+  font-size: 40px;
+  color: #a182d3;
+  margin-top: -30px;
 }
 
 .xlarge-font {
-  font-size: 64px
+  font-size: 64px;
 }
 
-.button {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #4CAF50;
-}
-
+/* image styles + making sure image sizes stay fixed at certain screen size */
 img {
   display: block;
   height: static;
@@ -128,9 +189,10 @@ img {
   }
 }
 
-/* Footer */
+/* footer styles */
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  color: #ffffff;
+  background-color: #47365e;
 }
