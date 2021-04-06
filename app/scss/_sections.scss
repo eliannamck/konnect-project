@@ -1,0 +1,54 @@
+/* styles of six sections on site:
+ 1. intro
+ 2. features
+ 3. call
+ 4. chat
+ 5. meet
+ 6. download 
+ */
+ .intro, .features, .call, .chat, .meet, .download {
+   padding: 64px;
+ }
+
+ .features, .chat, .download {
+   background-color: $lightGrey;
+ }
+
+ .download {
+   text-align: center;
+ }
+  
+  /* section components' styles */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-50 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66%;
+    padding: 20px;
+  }
+
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    font-size: 40px;
+    color: $greyishPurple;
+    margin-top: -30px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px;
+  }

@@ -1,0 +1,28 @@
+/* button styles */
+.button {
+    background-color: $purple;
+    border-radius: 12px;
+    border: none;
+    color: $white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button-clear {
+    background-color: $white;
+    border-radius: 12px;
+    border: 2px solid $lightPurple;
+    color: $purple;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

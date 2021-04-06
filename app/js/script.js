@@ -1,12 +1,13 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {makeSticky()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var headerVar = document.getElementById("myHeader");
+var sticky = headerVar.offsetTop;
 
-function myFunction() {
+// makes header to top of page stick when you scroll down
+function makeSticky() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    headerVar.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    headerVar.classList.remove("sticky");
   }
 }

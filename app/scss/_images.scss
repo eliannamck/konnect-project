@@ -1,0 +1,18 @@
+/* image styles + making sure image sizes stay fixed at certain screen size */
+img {
+    display: block;
+    height: static;
+    width: static;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-50,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }
