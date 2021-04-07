@@ -15,7 +15,7 @@
 
   .header a {
     float: left;
-    color: $black;
+    color: $darkPurple;
     text-align: center;
     padding: 10px;
     margin-inline: 5px;
@@ -32,7 +32,7 @@
   
   .header a:hover {
     background-color: $grey;
-    color: $black;
+    color: $darkDarkPurple;
   }
 
   .header a.active {
