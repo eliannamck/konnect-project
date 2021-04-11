@@ -36,6 +36,7 @@ body {
 
 .header a {
   float: left;
+  display: block;
   color: #47365e;
   text-align: center;
   padding: 10px;
@@ -67,19 +68,52 @@ body {
   float: right;
 }
 
-.hamburger {
-  font-weight: bolder;
+.header .icon {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
-  .header a {
+@media screen and (max-width: 1150px) {
+  .header a:not(:first-child) {
+    display: none;
+  }
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+  .header-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header.responsive {
+    position: relative;
+  }
+  .header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .header-right {
+}
+
+@media screen and (max-width: 1150px) {
+  .header-right.responsive {
+    position: relative;
+  }
+  .header-right.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-right.responsive a {
     float: none;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -192,6 +226,7 @@ body {
 .xlarge-font {
   font-size: 64px;
   color: #47365e;
+  line-height: 60pt;
 }
 
 /* image styles + making sure image sizes stay fixed at certain screen size */
@@ -202,7 +237,7 @@ img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .column-50,
   .column-33 {
     width: 100%;
