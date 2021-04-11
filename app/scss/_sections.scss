@@ -10,8 +10,21 @@
    padding: 64px;
  }
 
+ .intro, .call, .chat, .meet, .download {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.intro img {
+  max-width: 150%;
+}
+
+.features {
+  padding-left: 100px;
+}
+
  .features, .chat, .download {
-   background-color: $lightGrey;
+   background-color: $lightLightPurple;
  }
 
  .download {

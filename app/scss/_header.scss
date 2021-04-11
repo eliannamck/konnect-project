@@ -20,23 +20,24 @@
     padding: 10px;
     margin-inline: 5px;
     text-decoration: none;
-    font-size: 16px; 
+    font-size: 20px; 
     line-height: 25px;
     border-radius: 12px;
+    transition-duration: 0.4s;
   }
-  
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
+
   .header a:hover {
-    background-color: $grey;
-    color: $darkDarkPurple;
+    background-color: $almostPurple;
+    color: $white;
   }
 
   .header a.active {
     background-color: $purple;
+    color: $white;
+  }
+
+  .header a.active:hover {
+    background-color: $darkVibrantPurple;
     color: $white;
   }
   
