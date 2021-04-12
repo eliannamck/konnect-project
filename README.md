@@ -1,2 +1,4 @@
 # konnect-project
-This is my capstone project for COMP 4983. It is a frontend prototype landing page for a made up virtual video conference service called "Konnect".
+This is my final project for COMP 4983: Capstone Project. It is a web design prototype for a landing page of a made-up virtual conference service called "Konnect".
+
+![alt text](https://ibb.co/gmvGXYx)
